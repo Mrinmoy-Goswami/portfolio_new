@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+#root{
+  padding: 0;
+   margin: 0;
+
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    background: rgb(0,31,63);
+    background: linear-gradient(90deg, rgba(0,31,63,1) 50%, rgba(0,0,0,1) 100%);
+  }
+
+  .text-gradient{
+    background: -webkit-linear-gradient(#FF00FF, #3399FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  /* .project-card{
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  } */
+  
