@@ -5,6 +5,12 @@ import accenture from "../../assets/images/accenture.jpg"
 import blackcoffer from "../../assets/images/blackcoffer.png"
 import celebal from "../../assets/images/celebal.jpg"
 import oppo from "../../assets/images/Oppo.jpg"
+import oppocerti from "../../assets/images/oppocerti.jpeg"
+import celebalcerti from "../../assets/images/celebalcerti.jpeg"
+import accenturewelcome from "../../assets/images/accentureWelcome.jpeg"
+
+
+
 export function TimelineDemo() {
   const data = [
     {
@@ -22,12 +28,14 @@ export function TimelineDemo() {
       alt="accenture template"
       width="300"
       height="300"
+      loading = 'lazy'
       className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-md shadow-white"/>
        <img
-      src={accenture}
+      src={accenturewelcome}
       alt="accentureKit"
       width="300"
       height="300"
+      loading = 'lazy'
       className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-md shadow-white"/>
 
             
@@ -48,12 +56,7 @@ export function TimelineDemo() {
           <div className="grid grid-cols-2 gap-4">
           <img
       src={blackcoffer}
-      alt="accentureKit"
-      width="300"
-      height="300"
-      className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-md shadow-white"/> <img
-      src={blackcoffer}
-      alt="accentureKit"
+      alt=""
       width="300"
       height="300"
       className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-md shadow-white"/>
@@ -76,12 +79,13 @@ export function TimelineDemo() {
           <div className="grid grid-cols-2 gap-4">
           <img
       src={celebal}
-      alt="accentureKit"
+      alt="Celebal"
       width="300"
       height="300"
+      loading = 'lazy'
       className=" rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-md shadow-white"/> <img
-      src={celebal}
-      alt="accentureKit"
+      src={celebalcerti}
+      alt="celebal"
       width="300"
       height="300"
       className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-md shadow-white"/>
@@ -105,8 +109,9 @@ export function TimelineDemo() {
       alt="accentureKit"
       width="300"
       height="300"
+      loading = 'lazy'
       className=" rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-md shadow-white"/> <img
-      src={oppo}
+      src={oppocerti}
       alt="accentureKit"
       width="300"
       height="300"

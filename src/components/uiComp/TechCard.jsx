@@ -8,7 +8,7 @@ const TechCard = ({image,name,experience}) => {
         </span>
         <span className='flex flex-row'>
 
-      <img src={image}  className='h-10 w-10  object-cover w-1/5 rounded-full mr-2'/>
+      <img src={image}  className='h-10 w-10  object-cover w-1/5 rounded-full mr-2' alt='image' loading='lazy'/>
       <span className='flex flex-col items-end text-sm'>
         <span >{name}</span>
         <span>Experience : {experience}</span>
