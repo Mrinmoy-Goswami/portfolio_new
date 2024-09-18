@@ -1,102 +1,122 @@
 
 import React from "react";
 import { Timeline } from "./Timeline";
-
+import accenture from "../../assets/images/accenture.jpg"
+import blackcoffer from "../../assets/images/blackcoffer.png"
+import celebal from "../../assets/images/celebal.jpg"
+import oppo from "../../assets/images/Oppo.jpg"
 export function TimelineDemo() {
   const data = [
     {
-      title: "2024",
+      title: "July 2024",
       content: (
         <div>
           <p
             className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+            Joined Accenture as an Associate Software Engineer
           </p>
-          <img
-      src="https://assets.aceternity.com/templates/startup-1.webp"
-      alt="startup template"
-      width="500"
-      height="500"
-      className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"/>
-       <img
-      src="https://assets.aceternity.com/templates/startup-1.webp"
-      alt="startup template"
-      width="500"
-      height="500"
-      className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"/> <img
-      src="https://assets.aceternity.com/templates/startup-1.webp"
-      alt="startup template"
-      width="500"
-      height="500"
-      className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"/> <img
-      src="https://assets.aceternity.com/templates/startup-1.webp"
-      alt="startup template"
-      width="500"
-      height="500"
-      className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"/>
+     
           <div className="grid grid-cols-2 gap-4">
+          <img
+      src={accenture}
+      alt="accenture template"
+      width="300"
+      height="300"
+      className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-md shadow-white"/>
+       <img
+      src={accenture}
+      alt="accentureKit"
+      width="300"
+      height="300"
+      className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-md shadow-white"/>
+
             
           </div>
         </div>
       ),
     },
     {
-      title: "Early 2023",
+      title: "Dec 2023",
       content: (
         <div>
           <p
             className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            I usually run out of copy, but when I see content this big, I try to
-            integrate lorem ipsum.
+          Worked as an SDE Intern at Blackcoffer, where I contributed to live projects using React.js and collaborated closely with
+           the ML and Data Science teams to discuss and implement backend features, ensuring seamless integration across the tech stack.
           </p>
-          <p
-            className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Lorem ipsum is for people who are too lazy to write copy. But we are
-            not. Here are some more example of beautiful designs I built.
-          </p>
+         
           <div className="grid grid-cols-2 gap-4">
-          
+          <img
+      src={blackcoffer}
+      alt="accentureKit"
+      width="300"
+      height="300"
+      className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-md shadow-white"/> <img
+      src={blackcoffer}
+      alt="accentureKit"
+      width="300"
+      height="300"
+      className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-md shadow-white"/>
           </div>
         </div>
 
       ),
     },
     {
-      title: "Changelog",
+      title: "June-Aug 2023",
       content: (
         <div>
           <p
-            className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-            Deployed 5 new components on Aceternity today
+            className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+          Participated in the Celebal Summer Internship as a React.js Developer, where I gained exposure to 
+          industry-standard coding practices and contributed to several
+           React-based mini-projects, enhancing my development skills and understanding of professional workflows.
           </p>
-          <div className="mb-8">
-            <div
-              className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Card grid component
-            </div>
-            <div
-              className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Startup template Aceternity
-            </div>
-            <div
-              className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Random file upload lol
-            </div>
-            <div
-              className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Himesh Reshammiya Music CD
-            </div>
-            <div
-              className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Salman Bhai Fan Club registrations open
-            </div>
-          </div>
+         
           <div className="grid grid-cols-2 gap-4">
-           
+          <img
+      src={celebal}
+      alt="accentureKit"
+      width="300"
+      height="300"
+      className=" rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-md shadow-white"/> <img
+      src={celebal}
+      alt="accentureKit"
+      width="300"
+      height="300"
+      className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-md shadow-white"/>
           </div>
         </div>
+
       ),
     },
+    {
+      title: "May-Dec 2022",
+      content: (
+        <div>
+          <p
+            className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+         Worked as a Curator in Oppo+OnePlus gamespace. Lead teams of interns in content writing, managed forums along with review writing
+          </p>
+         
+          <div className="grid grid-cols-2 gap-4">
+          <img
+      src={oppo}
+      alt="accentureKit"
+      width="300"
+      height="300"
+      className=" rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-md shadow-white"/> <img
+      src={oppo}
+      alt="accentureKit"
+      width="300"
+      height="300"
+      className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-md shadow-white"/>
+          </div>
+        </div>
+
+      ),
+    },
+    
   ];
   return (
     (<div className="w-full">

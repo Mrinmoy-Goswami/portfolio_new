@@ -1,7 +1,7 @@
 
 import './App.css'
-
 import Navbar from './components/uiComp/Navbar'
+import Contact from './sections/Contact'
 import Hero from './sections/Hero'
 import Projects from './sections/Projects'
 import Techstack from './sections/Techstack'
@@ -13,13 +13,12 @@ function App() {
   return (
     <>
  
-   <Navbar/>
- <Hero/>
+    <Navbar/>
+    <Hero/>
     <Projects/>
     <Techstack/>
     <Timeline/>
-   
-  
+    <Contact/>
     </>
   )
 }

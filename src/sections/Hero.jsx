@@ -3,7 +3,7 @@ import { BackgroundLinesDemo } from '../components/ui/Bglines'
 
 const Hero = () => {
   return (
-   <div className='sticky'>
+   <div className='sticky '>
    <BackgroundLinesDemo/>
    </div>
   )
