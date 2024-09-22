@@ -16,7 +16,7 @@ const Projects = () => {
   const projects = useMemo(()=>[
     {name:"Gryffincode" , image: gryffincode , link : 'https://gryffincode.netlify.app',
       description:"Basically a Harry Potter themed Leetcode prototype with roadmap based themed problems"},
-    {name:"Tourbook" , image: tourbook , link : 'https://tourbook.netlify.app',
+    {name:"Tourbook" , image: tourbook , link : 'https://tourbook-blog.netlify.app/',
       description:"A travel blog app built with MERN. Post your travel saga with photos"},
     {name:"Recetas" , image:recetas , link : 'https://recetasbymrin.netlify.app/',
       description:"A recipe app to search for 250,000+ recipes, built in a hackathon in 2nd year of college"},
