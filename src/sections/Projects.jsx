@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import { useMemo } from 'react'
 import ProjectCard from '../components/uiComp/ProjectCard'
 import gryffincode from  ".././assets/images/gryffincode.jpeg"
 import tourbook from "../assets/images/tourbook.jpg"
@@ -28,7 +28,7 @@ const Projects = () => {
  
   return (
     <div id="projects"className='w-screen my-10 '>
-      <h1 className='text-center w-screen font-sans  text-white text-[2rem] sm:text-[3.5rem] mb-5'>projects</h1>
+      <h1 className='text-center w-screen font-sans  text-white text-[2rem] font-bold sm:text-[3.5rem] mb-5'>Projects</h1>
 
 
       <div className='w-full flex flex-wrap sm:flex-row flex-col items-center justify-center'>

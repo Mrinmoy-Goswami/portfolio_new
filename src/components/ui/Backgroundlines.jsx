@@ -1,16 +1,15 @@
 "use client";
 import { cn } from "../../utils/cn";
 import { motion } from "framer-motion";
-import React from "react";
+
 
 export const BackgroundLines = ({
-  children,
-  className,
-  svgOptions
+  // eslint-disable-next-line react/prop-types
+  children,  className,  svgOptions
 }) => {
   return (
     (<div
-      className={cn("flex h-screen w-screen  bg-gradient-to-r from-[#001F3F] to-[#000000] overflow-hidden", className)}>
+      className={cn("flex h-screen w-screen overflow-hidden", className)}>
       <SVG svgOptions={svgOptions} />
       {children}
     </div>)
@@ -27,6 +26,7 @@ const pathVariants = {
 };
 
 const SVG = ({
+  // eslint-disable-next-line react/prop-types
   svgOptions
 }) => {
   const paths = [
@@ -98,6 +98,7 @@ const SVG = ({
           initial="initial"
           animate="animate"
           transition={{
+            // eslint-disable-next-line react/prop-types
             duration: svgOptions?.duration || 10,
             ease: "linear",
             repeat: Infinity,
@@ -118,6 +119,7 @@ const SVG = ({
           initial="initial"
           animate="animate"
           transition={{
+            // eslint-disable-next-line react/prop-types
             duration: svgOptions?.duration || 10,
             ease: "linear",
             repeat: Infinity,

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import react from '../assets/images/react2.png'
 import aws from '../assets/images/aws.png'
 import cpp from '../assets/images/c++.png'
@@ -33,7 +33,7 @@ const techstack = [
 const Techstack = () => {
   return (
     <div className='w-screen  my-10'>
-       <h1 className='text-center font-sans  text-white text-[2rem] sm:text-[3.5rem] mb-5'>Tech stack</h1>
+       <h1 className='text-center font-sans  text-white text-[2rem] sm:text-[3.5rem] mb-5 font-bold'>Tech stack</h1>
        <div className='w-full items-center justify-center flex sm:flex-row flex-col flex-wrap '>
         {techstack.map((item,index)=><TechCard key={index} image={item.image} name={item.name} experience={item.experience} />)}
        

@@ -1,4 +1,4 @@
-import React from "react";
+
 import youtube from "../assets/images/youtube.jpg";
 import whatsapp from "../assets/images/whatsapp.png";
 import linkedin from "../assets/images/linkedin.png";
@@ -43,21 +43,28 @@ const contact = [
 
 const Contact = () => {
   return (
-    <footer id="contact" className="w-full bg-gradient-to-r from-gray-700 to-gray-900 py-10">
-      <h1 className="text-center font-sans text-white text-2xl sm:text-4xl mb-5">
-        Connect with Me
+    <footer
+      id="contact"
+      className="w-full bg-gradient-to-br h-full from-gray-900 via-gray-800 to-gray-900 py-14 px-4 text-center"
+    >
+      {/* Header */}
+      <h1 className="font-sans text-white text-3xl sm:text-5xl mb-4 font-bold animate-fade-in">
+        Connect with <span className="text-gradient">Me</span>
       </h1>
-      
-      <p className="text-center text-gray-300 mb-8 text-sm sm:text-base">
-        Let's get in touch! I'm always open to collaboration or just a chat. Reach out through any of the platforms below.
+
+      <p className="text-gray-300 mb-10 text-sm sm:text-lg max-w-2xl mx-auto animate-fade-in-up">
+        Let&apos;s get in touch! I&apos;m always open to{" "}
+        <span className="text-gradient">collaboration</span> or just a chat.  
+        Reach out through any of the platforms below.
       </p>
 
       {/* Contact icons */}
-      <div className="flex flex-wrap justify-center gap-6 sm:gap-8 mb-10">
+      <div className="flex flex-wrap justify-center gap-6 sm:gap-10 mb-12">
         {contact.map((item, index) => (
           <a
             key={index}
-            className="transition-transform transform hover:scale-110"
+            className="transition-transform transform hover:scale-125 animate-fade-in-up"
+            style={{ animationDelay: `${index * 0.1}s` }}
             target="_blank"
             title={item.title}
             href={item.link}
@@ -66,22 +73,19 @@ const Contact = () => {
             <img
               src={item.image}
               alt={item.title}
-              className="h-12 w-12 sm:h-16 sm:w-16 rounded-full shadow-md shadow-white hover:shadow-lg hover:shadow-cyan-500"
+              className="h-14 w-14 sm:h-20 sm:w-20 rounded-full shadow-md shadow-black hover:shadow-cyan-500/80 transition-all duration-300"
             />
           </a>
         ))}
       </div>
 
       {/* Footer Details */}
-      <div className="text-center text-gray-400 px-4">
-        <p className="mb-2 text-xs sm:text-sm">
-          Made with ❤️ by Mrinmoy Goswami
-        </p>
-        <p className="mb-5 text-xs sm:text-sm">
-          © {new Date().getFullYear()} Mrinmoy Goswami. All rights reserved.
-        </p>
-        <p className="text-xs sm:text-sm">
-          Built with <span className="text-yellow-400">React</span>, hosted on <span className="text-cyan-400">Vercel</span>.
+      <div className="text-gray-400 space-y-2 text-xs sm:text-sm animate-fade-in">
+        <p>Made with ❤️ by <span className="text-gradient">Mrinmoy Goswami</span></p>
+        <p>© {new Date().getFullYear()} Mrinmoy Goswami. All rights reserved.</p>
+        <p>
+          Built with <span className="text-yellow-400 font-medium">React</span>, hosted on{" "}
+          <span className="text-cyan-400 font-medium">Vercel</span>.
         </p>
       </div>
     </footer>

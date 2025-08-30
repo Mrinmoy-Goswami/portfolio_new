@@ -1,8 +1,10 @@
+/* eslint-disable react/prop-types */
 "use client";;
 import { useScroll, useTransform, motion } from "framer-motion";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export const Timeline = ({
+  // eslint-disable-next-line react/prop-types
   data
 }) => {
   const ref = useRef(null);
@@ -29,7 +31,7 @@ export const Timeline = ({
       className="w-full  font-sans p-5"
       ref={containerRef}>
       <div className="w-screen mx-auto py-20  md:px-8 flex flex-col items-center  ">
-        <h2 className="text-[2rem] sm:text-[3.5rem]  text-black dark:text-white max-w-4xl">
+        <h2 className="text-[2rem] sm:text-[3.5rem] font-bold  text-black dark:text-white max-w-4xl">
           My journey
         </h2>
        

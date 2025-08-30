@@ -1,5 +1,5 @@
 
-import React from "react";
+
 import { Timeline } from "./Timeline";
 import accenture from "../../assets/images/accenture.jpg"
 import blackcoffer from "../../assets/images/blackcoffer.png"
@@ -124,7 +124,7 @@ export function TimelineDemo() {
     
   ];
   return (
-    (<div className="w-full">
+    (<div className="w-full h-full">
       <Timeline data={data} />
     </div>)
   );
