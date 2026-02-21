@@ -5,6 +5,7 @@ import tourbook from "../assets/images/tourbook.jpg"
 import recetas from "../assets/images/recetas.jpg"
 import weather from "../assets/images/weather.jpg"
 import letskart from "../assets/images/letskart.jpg"
+import snapnotes from "../assets/images/snapnotesai.png"
 
 
 
@@ -14,6 +15,7 @@ import letskart from "../assets/images/letskart.jpg"
 const Projects = () => {
 
   const projects = useMemo(()=>[
+    {name : "SnapNotesAI",image : snapnotes , link : 'https://snapnotesai.vercel.app/' , description:"An AI-powered note-taking app that generates concise summaries, deep notes and MCQs from your notes, making it easier to review and study before exams."},
     {name:"Gryffincode" , image: gryffincode , link : 'https://gryffincode.netlify.app',
       description:"Basically a Harry Potter themed Leetcode prototype with roadmap based themed problems"},
     {name:"Tourbook" , image: tourbook , link : 'https://tourbook-blog.netlify.app/',
